@@ -1,0 +1,40 @@
+/* p {
+    background-color: bisque;
+    font-size: 20px;
+} */
+div {
+    font-size: 20px;
+    /* margin: 10px; */
+    padding: 10px;
+    /* border: 10px solid black; */
+    border-bottom: 2px solid black;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    /* left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0; */
+}
+
+#a1 {
+    background-color: lightcoral;
+    top: 0;
+    left: 0;
+}
+#a2 {
+    background-color: lightblue;
+    right: 0;
+    top: 0;
+}
+#a3 {
+    background-color: lightgreen;
+    right: 0;
+    bottom: 0;
+}
+#a4 {
+    background-color: lightpink;
+    left: 0;
+    bottom: 0;
+}
+
