@@ -1,0 +1,41 @@
+p {
+  background-color: blanchedalmond;
+  font-size: 12px;
+}
+strong {
+  color: red;
+}
+div {
+  background-color: antiquewhite;
+  /* margin: 10px; */
+  padding: 20px;
+  /* border: 2px solid black; */
+  border-bottom: 2px solid black;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  /* top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; */
+}
+#a1 {
+  background-color: aliceblue;
+  top: 0;
+  left: 0;
+}
+#a2 {
+  background-color: lightcoral;
+  top: 0;
+  right: 0;
+}
+#a3 {
+  background-color: lightcyan;
+  bottom: 0;
+  right: 0;
+}
+#a4 {
+  background-color: lightblue;
+  left: 0;
+  bottom: 0;
+}
