@@ -7,28 +7,34 @@ body {
 }
 #main {
     width: 1000px;
+    /* wyśrodkowanie #main */
     margin-left: auto;
     margin-right: auto;
 }
 #header {
+    /* zmiana sposobu pozycjonowania elementów */
     display: flex;
     justify-content: space-between;
     padding-bottom: 20px;
     border-bottom: 1px solid #aaa;
 }
 #header a {
+    /* usunięcie podkreśleń */
     text-decoration: none;
+    /* kapitalizacja */
     text-transform: uppercase;
 }
 #about-us {
     display: flex;
     font-size: 20px;
+    /* wysokość wiersza tekstu */
     line-height: 30px;
 }
+/* selektor - każdy <p> wewnątrz <element id="about-left"> */
 #about-left p {
+    /* wyśrodkowanie tekstu w <p> */
     text-align: center;
 }
-#about-right {}
 #circles {
     display: flex;
     justify-content: center;
@@ -37,9 +43,12 @@ body {
     background-color: #4f9ae0;
     width: 200px;
     height: 200px;
+    /* zaokrąglenie narożników */
     border-radius: 50%;
+    /* przezroczystość elementu i jego zawartości */
     opacity: 0.7;
 }
+/* style po najechaniu myszą na element */
 #circle1:hover {
     opacity: 0.85;
 }
@@ -56,7 +65,9 @@ body {
 }
 #footer {
     background-color: #232d2f;
+    /* obraz w tle */
     background-image: url(zabek.jpg);
+    /* tryb powtarzania grafiki w tle */
     background-repeat: repeat-x;
     margin-top: 40px;
     height: 200px;
