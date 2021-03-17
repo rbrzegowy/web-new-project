@@ -1,0 +1,63 @@
+body {
+    margin: 0;
+}
+#main {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#header-bar {
+    height: 8px;
+    background-color: #252627;
+}
+#header {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #888;
+}
+#navigation a {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#news {
+    display: flex;
+}
+#news1 p {
+    text-align: center;
+}
+#circles {
+    display: flex;
+    justify-content: center;
+}
+#circle1 {
+    background-color: #5094d8;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    opacity: 0.7;
+}
+#circle1:hover {
+    opacity: 0.85;
+}
+#circle2 {
+    background-color: #5094d8;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    opacity: 0.7;
+    margin-left: -30px;
+}
+#circle2:hover {
+    opacity: 0.85;
+}
+#footer {
+    background-color: #252627;
+    background-image: url(zabek.jpg);
+    background-repeat: repeat-x;
+    height: 200px;
+    margin-top: 40px;
+    color: #eee;
+    padding: 40px;
+}
