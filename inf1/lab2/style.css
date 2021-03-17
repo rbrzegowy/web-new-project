@@ -44,7 +44,7 @@ body {
 }
 #circles {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
 }
 #circle {
     width: 200px;

@@ -1,0 +1,63 @@
+body {
+    margin: 0;
+}
+#header-bar {
+    background-color: #232323;
+    height: 8px;
+}
+#main {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#header {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #aaa;
+}
+#header a {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+#about-us {
+    display: flex;
+    font-size: 20px;
+    line-height: 30px;
+}
+#about-left p {
+    text-align: center;
+}
+#about-right {}
+#circles {
+    display: flex;
+    justify-content: center;
+}
+#circle1 {
+    background-color: #4f9ae0;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    opacity: 0.7;
+}
+#circle1:hover {
+    opacity: 0.85;
+}
+#circle2 {
+    background-color: #4f9ae0;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-left: -30px;
+    opacity: 0.7;
+}
+#circle2:hover {
+    opacity: 0.85;
+}
+#footer {
+    background-color: #232d2f;
+    background-image: url(zabek.jpg);
+    background-repeat: repeat-x;
+    margin-top: 40px;
+    height: 200px;
+}
