@@ -1,0 +1,72 @@
+html {
+    font-size: 20px;
+}
+body {
+    background: rgba(255,0,0, 0.5);
+    font-size: 40px;;
+    /*szesnastka: background: #8a6175; */
+    /* 
+    background: #aaa; #aabbcc 
+    */
+}
+/* WSZYSTKIE akapity */
+p {
+  color: yellow;
+  background-color: lightcoral;
+}
+h2 {
+  color: green;
+  width: 10vw;
+  /* width: 10vmin; */
+  /* width: 10vmax; */
+  /* width: 50%; */
+  /* width: ; */
+  height: 50vh;
+  /* font-size: 1rem */
+}
+/* formatowanie elementu o id="dane-kontaktowe" */
+#dane-kontaktowe {
+  font-size: 20px;
+}
+/* style dla elementów o class="zielone-tlo" */
+.zielone-tlo {
+  background-color: lightgreen;
+}
+.f30 {
+  font-size: 30px;
+}
+.f50 {
+  font-size: 50px;
+}
+
+a {
+    color: pink;
+    font-size: 20px;
+}
+/* pseudoklasy */
+a:hover {
+    color: black;
+}
+/* oderwane do strony przykłady */
+p, h2, .m20 {
+    margin: 20px;
+}
+/* kazdy <span> w każdym <p> */
+p span {
+  font-size: 2rem;
+  color: lightseagreen;
+}
+p a {
+    color: lightseagreen;
+}
+
+/* em-y w praktyce - problem */
+#em {
+    font-size: 20px;
+}
+#em b {
+    font-size: 1.25em;
+}
+span {
+    font-size: 1.6em;
+}

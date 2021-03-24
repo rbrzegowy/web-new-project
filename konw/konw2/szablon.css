@@ -1,0 +1,34 @@
+main {
+    background-color: lightblue;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 50px 40px;
+    border: 5px solid #000;
+    border-top-width: 10px;
+}
+header {
+    height: 150px;
+    background-color: lightcoral;
+}
+section {
+    display: flex;
+}
+aside {
+    width: 150px;
+    height: 600px;
+    background-color: lightcyan;
+}
+article {
+    width: 900px;
+    height: 600px;
+    background-color: lightskyblue;
+}
+#rside {
+    width: 150px;
+    height: 600px;
+    background-color: lightpink;
+}
+footer {
+    height: 150px;
+    background-color: lightcoral;
+}
