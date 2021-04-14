@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <style>
+        body {
+            background: #ccc;
+        }
+        main {
+            margin: 0 auto;
+            background: #fff;
+            width: 2000px;
+            /* height: 800px; */
+            display: grid;
+            /* grid-template-columns: [start] 200px [sl] 800px [thl] 200px [end]; */
+            /* grid-template-columns: 200px 1fr 1fr 1fr 200px; */
+            grid-template-columns: repeat(5, 400px);
+            grid-auto-rows: 400px;
+            /* grid-template-rows: 200px 600px 200px; */
+            
+        }
+        main img {
+            /* width: 100px; */
+            /* height: 100px; */
+            align-self: start;
+            justify-self: start;
+            /* place-self: start center; */
+        }
+        main span {
+            background: red;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <span>123</span>
+        <img src="https://picsum.photos/100/100" alt="">
+        <img src="https://picsum.photos/500/200" alt="">
+        <img src="https://picsum.photos/300/300" alt="">
+        <img src="https://picsum.photos/700/500" alt="">
+        <img src="https://picsum.photos/300/200" alt="">
+        <img src="https://picsum.photos/300/600" alt="">
+        <img src="https://picsum.photos/100/700" alt="">
+        <img src="https://picsum.photos/800/200" alt="">
+        <img src="https://picsum.photos/200/300" alt="">
+        <img src="https://picsum.photos/300/200" alt="">
+        <img src="https://picsum.photos/400/500" alt="">
+        <img src="https://picsum.photos/400/600" alt="">
+        <img src="https://picsum.photos/300/700" alt="">
+        <img src="https://picsum.photos/300/100" alt="">
+        <img src="https://picsum.photos/300/200" alt="">
+        <img src="https://picsum.photos/100/300" alt="">
+        <img src="https://picsum.photos/800/500" alt="">
+        <img src="https://picsum.photos/300/600" alt="">
+        <img src="https://picsum.photos/300/200" alt="">
+    </main>
+    
+</body>
+</html>

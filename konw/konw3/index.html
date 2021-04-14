@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="widescreen.css">
+    <link rel="stylesheet" media="screen and (min-width: 900px)" href="widescreen.css">
+    <link rel="stylesheet" media="screen and (min-width: 900px)" href="widescreen.css">
+    <link rel="stylesheet" media="screen and (min-width: 900px)" href="widescreen.css"> -->
+    <title>Grid</title>
+    <style>
+      /* all i mobile pion */
+      body {
+        background: #ccc;
+      }
+      main {
+        margin: 0 auto;
+        background: #fff;
+        /* height: 800px; */
+        display: grid;
+        /* grid-template-columns: [start] 200px [sl] 800px [thl] 200px [end]; */
+        /* grid-auto-rows: 400px; */
+        /* grid-template-columns: auto; */
+        /* grid-template-rows: auto; */
+        grid-template-areas:
+          "header"
+          "lside"
+          "main"
+          "rside"
+          "footer";
+      }
+      main > * {
+        background-color: antiquewhite;
+      }
+      header {
+        background-color: lightblue;
+        /* grid-column-start: start;
+            grid-column-end: end; */
+        /* grid-row: 1 / 3; */
+        grid-area: header;
+      }
+      aside {
+        background-color: lightcoral;
+        grid-area: lside;
+      }
+      section {
+        background-color: lightgray;
+        grid-area: rside;
+      }
+      article {
+        background-color: lightseagreen;
+        grid-area: main;
+      }
+      footer {
+        background-color: lightpink;
+        grid-area: footer;
+      }
+      @media screen and (min-width: 576px) {
+        main {
+          grid-template-columns: 1fr 1fr;
+          grid-template-areas:
+            "header header"
+            "lside rside"
+            "main main"
+            "footer footer";
+        }
+      }
+      @media screen and (min-width: 768px) {
+      }
+      @media screen and (min-width: 992px) {
+        main {
+          grid-template-columns: 1fr 1fr 1fr;
+          grid-template-areas:
+            "header header header"
+            "lside main rside"
+            "footer footer footer";
+        }
+      }
+      @media screen and (min-width: 1200px) {
+        main {
+          grid-template-columns: 200px 800px 200px;
+          grid-template-rows: 200px 600px 200px;
+        }
+      }
+      @media screen and (min-width: 1400px) {
+        main {
+          grid-template-columns: 400px 800px 400px;
+        }
+      }
+      @media screen and (max-width: 767px) {
+        main {
+          background-image: url(small.jpg);
+        }
+      }
+      @media screen and (min-width: 768px) and (max-width: 1200px) {
+        main {
+          background-image: url(medium.jpg);
+        }
+      }
+      @media screen and (min-width: 1400px) {
+        main {
+          background-image: url(large.jpg);
+        }
+      }
+
+      /* 
+        tel pion <576, 
+        tel poziom <768, 
+        tablet pion<992, 
+        tablet poziom i małe stare brzydkie;) ekrany <1200, 
+        desktop <1400
+        */
+
+      /* @media screen and (max-width: 800px) {} */
+      /* @media screen and (min-width: 400px) and (max-width: 800px) {}
+      @media screen and (min-width: 800px) {} */
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>Nagłówek</header>
+      <aside>Lewy panel</aside>
+      <article>
+        Mięsko
+        <picture>
+          <source srcset="https://picsum.photos/600/300" media="(min-width: 900px)" />
+          <source srcset="https://picsum.photos/200/300" media="(min-width: 576px)" />
+          <img src="https://picsum.photos/100/100" />
+        </picture>
+        <!-- <img
+          srcset="
+            https://picsum.photos/600/300  600w,
+            https://picsum.photos/1200/300 1200w
+          "
+          sizes="(max-width: 600px) 600px,
+            1200px"
+          src="https://picsum.photos/1200/300.jpg"
+          alt="picsum"
+        /> -->
+      </article>
+      <section>Prawy panel</section>
+      <footer>Stopka</footer>
+    </main>
+  </body>
+</html>
