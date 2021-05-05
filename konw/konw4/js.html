@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .active {
+            background: lightcoral;
+            font-weight: bold;
+        }
+        .red {
+            color: red;
+        }
+        .green {
+            color: green;
+        }
+        .bg-black {
+            background: black;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" id="className">
+    <button id="setClassName">Zastosuj klasy CSS</button>
+    <div id="pojemnik" class="main lorem">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem incidunt quas amet. Iusto, molestias excepturi. Tempore nostrum perferendis exercitationem, odit et minus vero earum incidunt ea nesciunt molestiae iste in!
+    </div>
+    <script type="text/javascript">
+    // pobieranie uchwytu do elementu
+    const poj = document.querySelector('#pojemnik');
+    // zmiana zawartości elementu
+    poj.innerText = '<b>jakiś tekst z js-a</b>';
+    poj.innerHTML = '<b>jakiś tekst z js-a</b>';
+    // zmiana formatowania
+    poj.style.fontSize = '40px';
+    // zmiana klasy css
+    // poj.className = 'active'
+    poj.classList.add('active');
+    poj.classList.remove('lorem');
+    // tworzenie nowych elementów
+    // <img src="">
+    const newImg = document.createElement('img');
+    newImg.src = "https://wsei.edu.pl/navigator/wsei.png"
+    document.body.appendChild(newImg);
+
+    // pobieramy uchwyt do button-a
+    const btn = document.querySelector('#setClassName')
+    btn.addEventListener('click',() => {
+        const classInput = document.querySelector('#className');
+        const classes = classInput.value;
+        poj.className = classes;
+    })
+    </script>
+</body>
+</html>

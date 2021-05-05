@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>3D Box button</title>
+    <style>
+        body {
+            background: #BBDEFB
+        }
+        .button {
+            position: relative;
+        }
+        .fg, .bg {
+            width:100px;
+            padding: 10px 20px;
+            height: 16px;
+            text-align: center;
+            text-transform: uppercase;
+            font-family: sans-serif;
+            position: absolute;
+            left: 0;
+            transition: all 0.5s ease;
+        }
+        .fg {
+            background: #AD1457;
+            color: #fff;
+            top: 0;
+        }
+        .bg {
+            color: #AD1457;
+            background: #fff;
+            top: 18px;
+            transform: rotateX(90deg);
+
+        }
+        .button:hover .bg {
+            transform: rotateX(0);
+            top:0;
+        }
+        .button:hover .fg {
+            transform: rotateX(-90deg);
+            top: -18px;
+        }
+    </style>
+</head>
+<body>
+    <div class="button">
+        <div class="fg">Jeeeeeeej!</div>
+        <div class="bg">Jeeeeeeej!</div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+body {
+    background: #eee;
+}
+.bg {
+    background: url(startuper-hover-1-299x347.jpg);
+    background-size: cover; 
+}
+#box {
+    width: 150px;
+    height: 150px;
+    border: 100px solid #f5f5f5;
+    background: #f5f5f5;   
+    position: relative;
+    margin: 50px auto;
+    transition: all 0.5s ease;
+    transform: rotateX(260deg) rotateY(0deg);
+    transform-style: preserve-3d;
+    perspective: 100px;
+    animation: rotate 4s linear 1s infinite normal;
+    /*animation-name: rotate;*/
+    /*animation-duration: 4s;*/
+    /*animation-iteration-count: infinite;*/
+    /*animation-direction: alternate;*/
+    /*animation-timing-function: linear;*/
+}
+.face {
+    width: 150px;
+    height: 150px;
+    position: absolute;     
+}
+.front {
+    /*nothing to do*/
+}
+.bottom {
+    transform: rotateX(90deg) translateY(-75px) translateZ(-75px)
+}
+.left {
+    transform: rotateY(-90deg) translateX(-75px) translateZ(-75px)
+}
+
+@keyframes rotate {
+    0% {transform:   rotateX(260deg) rotateY(0deg) rotateZ(0deg)}
+    100% {transform:  rotateX(260deg) rotateY(0deg) rotateZ(360deg)}
+}
+.clearfix {
+    clear: both;
+}

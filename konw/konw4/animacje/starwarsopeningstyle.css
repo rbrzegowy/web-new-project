@@ -1,0 +1,27 @@
+body {
+	background: black;
+	color: rgb(143, 143, 18);
+	overflow: hidden;
+}
+
+#container {
+	perspective: 410px;
+}
+
+#txt {
+	font-size: 20px;
+	line-height: 22px;
+	width: 600px;
+	margin: 0 auto;
+	position: relative;
+	text-align: center;
+	transform: rotateX(45deg) translateY(500px);
+	animation: begin 45s linear;
+}
+
+@keyframes begin {
+	0% {} /* from */
+	100% { /* to */
+		transform: rotateX(45deg) translateY(-300px);
+	}
+}

@@ -1,0 +1,6 @@
+https://animista.net/play/basic/slide/slide-right
+
+tympanus, menus
+https://tympanus.net/Development/OffCanvasMenuEffects/bubble.html
+https://tympanus.net/Development/SidebarTransitions/
+https://tympanus.net/Development/PerspectivePageViewNavigation/index6.html#
