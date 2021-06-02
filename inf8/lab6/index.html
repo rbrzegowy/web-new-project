@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #img1 {
+            width: 350px;
+            transition: opacity 0.3s ease-in-out;
+        }
+        #img1:hover {
+            opacity: 0.6;
+        }
+        .lightbox {
+            background-color: rgba(0,0,0,0.6);
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            display: none;
+            justify-content: center;
+            align-items: center;
+        }
+        .visible {
+            display: flex;
+        }
+        #lightbox-image {
+            max-width: 70vw;
+        }
+    </style>
+</head>
+<body>
+    
+    <main>
+        <img src="http://make-lemonade.co/themes/selfy/img/mock5.jpg" alt="" id="img1">
+    </main>
+    <div class="lightbox">
+        <img alt="" srcset="" id="lightbox-image">
+    </div>
+
+    <script type="text/javascript">
+        const img1 = document.querySelector('#img1');
+        img1.addEventListener('click', () => showLightbox('http://make-lemonade.co/themes/selfy/img/mock5.jpg'));
+        function showLightbox(imgSrc) {
+            const lightbox = document.querySelector('.lightbox');
+            const lightboxImage = document.querySelector('#lightbox-image');
+            lightbox.classList.add('visible');
+            lightboxImage.src = imgSrc
+        }
+    </script>
+</body>
+</html>
